@@ -47,3 +47,7 @@ The game runs at 30 fps by default. To run at 60 fps, modify the sleep time in `
 ## Controls
 
 Press spacebar to make the bird jump.
+
+Everything you see here is literally a table and some queries on it. SQL is fun, but I really like data because she likes data.
+
+![view](view.gif)
