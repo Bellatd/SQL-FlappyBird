@@ -1,5 +1,6 @@
 import pyodbc
 import os
+import sys
 import keyboard
 import time
 
@@ -7,56 +8,61 @@ SERVER = 'localhost'
 DATABASE = 'db_flappy_bird_game'
 conn_str = f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={SERVER};DATABASE={DATABASE};Trusted_Connection=yes;'
 
-def print_frame(rows):
-    """Print a frame to console"""
-    os.system('cls' if os.name == 'nt' else 'clear')
+def enable_ansi_windows():
+    if os.name == 'nt':
+        import ctypes
+        kernel32 = ctypes.windll.kernel32
+        kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
+
+def print_frame_fast(rows):
+    output_buffer = ["\033[H"] 
     for row in rows:
         line = ''.join(str(cell) if cell else ' ' for cell in row[1:])
-        print(line)
+        output_buffer.append(line)
+    sys.stdout.write('\n'.join(output_buffer))
+    sys.stdout.flush()
 
 def main():
+    enable_ansi_windows()
+    os.system('cls' if os.name == 'nt' else 'clear')
+    
     try:
         conn = pyodbc.connect(conn_str)
         conn.autocommit = True
         cursor = conn.cursor()
         
-        # Initialize game
-        print("please wait while initializing game...")
+        print("Initializing game...")
         cursor.execute("EXEC InitializeGame")
         
-        print("please wait while starting game...")
+        print("Starting...")
         time.sleep(0.5)
         
+        os.system('cls' if os.name == 'nt' else 'clear')
+
         while True:
             user_input = 's' if keyboard.is_pressed('space') else ''
             
             cursor.execute("EXEC ProcessBackFrameReturnRenderedFrontFrame ?", user_input)
             
-            # Get collision (first result set)
             collision = cursor.fetchone()[0]
             
-            # Get frame (second result set)
             cursor.nextset()
             frame_rows = cursor.fetchall()
             
-            print_frame(frame_rows)
+            print_frame_fast(frame_rows)
             
             if collision == 1:
-                print("\n\nGAME OVER!")
+                sys.stdout.write(f"\033[{len(frame_rows)+2}H") 
+                print("\nGAME OVER!")
                 break
             
-            time.sleep(0.0167)  # ~30 fps
-            
     except KeyboardInterrupt:
-        print("\n\nGame stopped by user!")
-    
-    #for debugging purposes only print error
+        sys.stdout.write("\nGame stopped!\n")
     except Exception as e:
-        print(f"Error: {e}")
-        
+        sys.stdout.write(f"\nError: {e}\n")
     finally:
-        cursor.close()
-        conn.close()
+        if 'cursor' in locals(): cursor.close()
+        if 'conn' in locals(): conn.close()
 
 if __name__ == "__main__":
     main()

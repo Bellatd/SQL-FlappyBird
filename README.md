@@ -39,15 +39,13 @@ Set up your own `connectivity.py` configuration.
    ```
    python connectivity.py
    ```
-
-## Performance
-
-The game runs at 30 fps by default. To run at 60 fps, modify the sleep time in `connectivity.py` from `0.033` to `0.016`.
-
 ## Controls
 
 Press spacebar to make the bird jump.
 
-Everything you see here is literally a table and some queries on it. SQL is fun, but I really like data because she likes data.
+___ 
+Everything you see here is literally a table and some queries on it. SQL is fun, **but I really like data because she likes data.**
 
-![view](view.gif)
+<p align="center">
+  <img src="view.gif" alt="Gameplay">
+</p>
