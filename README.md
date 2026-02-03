@@ -15,7 +15,7 @@ This architecture allows the entire game loop to run within SQL Server without e
 ## Setup
 
 **Option 1:**
-Create a database named `db_flappy_bird_game` in MS SQL Server and connect using Windows Authentication.
+Create a database named `db_flappy_bird_game` in MS SQL Server.
 
 **Option 2:**
 Set up your own `connectivity.py` configuration.
